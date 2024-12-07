@@ -1,0 +1,120 @@
+/* إعدادات الصفحة العامة */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #2196f3, #4a00e0); /* تدرج الألوان الأزرق والبنفسجي */
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* شاشة الترحيب */
+#welcome-screen {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 10% auto;
+    width: 80%;
+}
+
+#welcome-screen h1 {
+    color: #4a00e0;
+}
+
+#welcome-screen p {
+    color: #333;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4a00e0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #8e2de2;
+}
+
+/* واجهة التطبيق */
+#app-screen {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+h1 {
+    color: #4a00e0;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* قائمة المهام */
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #2196f3; /* الأزرق للمهام الجديدة */
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li.completed {
+    background-color: #4caf50; /* الأخضر للمهام المكتملة */
+}
+
+li.deleted {
+    background-color: #f44336; /* الأحمر للمهام الملغاة */
+}
+
+.check-btn, .delete-btn {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.check-btn {
+    background-color: #4caf50; /* زر ✔️ أخضر */
+}
+
+.check-btn:hover {
+    background-color: #388e3c;
+}
+
+.delete-btn {
+    background-color: #f44336; /* زر ❌ أحمر */
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* الرسم البياني */
+canvas {
+    margin-top: 20px;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}

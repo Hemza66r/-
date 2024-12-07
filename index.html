@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css"> <!-- ربط ملف CSS -->
+</head>
+<body>
+    <!-- شاشة الترحيب تظهر في الزيارة الأولى فقط -->
+    <div id="welcome-screen" style="display: none;">
+        <h1>Welcome to Task Manager!</h1>
+        <p>Learn how to manage your tasks efficiently.</p>
+        <button id="skipBtn">Skip Welcome</button>
+    </div>
+
+    <!-- شاشة التطبيق -->
+    <div id="app-screen" style="display: none;">
+        <h1>Task Manager</h1>
+        <input type="text" id="taskInput" placeholder="Enter task">
+        <input type="time" id="taskTime">
+        <button id="addTaskBtn">Add Task</button>
+        <ul id="taskList"></ul>
+        <canvas id="taskChart" width="200" height="200"></canvas>
+    </div>
+
+    <!-- تضمين مكتبة Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script> <!-- ربط ملف JavaScript -->
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
